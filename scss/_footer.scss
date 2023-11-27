@@ -1,0 +1,88 @@
+:root {
+    --Catamaran: 'Catamaran', sans-serif;
+    --WhiteBlue: #99BAED;
+    --yellow: #FBB400;
+    --darkblue: #163561;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 186px;
+    flex-direction: column;
+    gap: 47px 0px;
+
+    .footer__text {
+        color: var(--darkblue);
+        text-align: center;
+        font-family: var(--Catamaran);
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 150.6%;
+        letter-spacing: 0.75px;
+        max-width: 526px;
+    }
+
+    .circles {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 251px;
+        gap: 0px 25px;
+
+        .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #99BAED;
+            width: 67px;
+            height: 67px;
+            border-radius: 50%;
+        }
+
+        .circle-whiteblue {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #D3E5FF;
+            width: 67px;
+            height: 67px;
+            border-radius: 50%;
+        }
+    }
+
+    .line {
+        width: 1362px;
+        height: 5px;
+        background: #99BAED;
+        margin-bottom: 100px;
+    }
+}
+
+.footer__logo {
+    display: flex;
+
+    .Logo-text {
+        color: var(--WhiteBlue);
+        font-family: var(--Catamaran);
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 133.6%;
+        margin-left: -41px;
+        margin-top: 94px;
+    }
+
+}
+
+.Vector7{
+    position: absolute;
+    margin-top: 209px;
+    margin-right: 1630px;
+}
+
+.Vector8{
+    position: absolute;
+    margin-top: 209px;
+    margin-left: 1590px;
+}

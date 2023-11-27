@@ -1,0 +1,83 @@
+:root {
+    --Catamaran: 'Catamaran', sans-serif;
+    --WhiteBlue: #99BAED;
+    --yellow: #FBB400;
+    --darkblue: #163561;
+}
+
+.hero__wrapper{
+    display: flex;
+    gap: 24px 0px;
+    width: 100%;
+    height: 821px;
+    justify-content: start;
+    background-image: url(../images/Barber\ Hero.png);
+    background-repeat: no-repeat;
+    background-position: 780px;
+    background-size: auto;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    gap: 29px 0px;
+    margin-left: 188px;
+    margin-top: 102px;
+    .yellow {
+        color: var(--yellow);
+        font-family: var(--Catamaran);
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 133.6%;
+        width: 576px;
+    }
+
+    .Blue {
+        color: var(--darkblue);
+        font-family: var(--Catamaran);
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 133.6%;
+        width: 576px;
+    }
+
+    .hero__lyrics {
+        color: var(--darkblue);
+        font-family: var(--Catamaran);
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 150.6%;
+        letter-spacing: 0.75px;
+        width: 526px;
+    }
+
+    .hero__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        color: #FFF;
+        font-family: var(--Catamaran);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 150.6%;
+        letter-spacing: 0.6px;
+        border-radius: 20px;
+        background: var(--WhiteBlue);
+        padding: 23px 41px;
+        max-width: 200px;
+        height: 75px;
+        transition: 0.3s ease;
+        box-shadow: 0px 10px 10px 1px rgba(153, 186, 237, 0.50);
+        cursor: pointer;
+        margin-top: 68px;
+        &:hover{
+            background-color: white;
+            color: var(--WhiteBlue);
+            border: 2px solid var(--WhiteBlue);
+        }
+        &:active{
+            transform: scale(0.8);
+        }
+    }
+}

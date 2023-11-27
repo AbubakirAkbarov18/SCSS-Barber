@@ -1,0 +1,149 @@
+%conteiner{
+    width: 1920px;
+    margin: 0 auto;
+}
+
+:root{
+    --Catamaran: 'Catamaran', sans-serif;
+    --WhiteBlue: #99BAED;
+}
+
+// Main
+
+.navbar{
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+.container{
+    @extend %conteiner;
+
+}
+
+.navbar__wrapper{
+    height: 138px;
+    display: flex;
+    justify-content: center;
+    gap: 0px 100px;
+    .Barber__logo{
+        display: flex;
+        align-items: center;
+        max-width: 166px;
+        .logo-text{
+            color: var(--WhiteBlue);
+            font-family: var(--Catamaran);
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 133.6%; 
+            margin-left: -17px;
+            margin-top: 30px;
+            max-width: 91px;
+        }
+        .logo{
+            width: 74.224px;
+            height: 74.224px;
+        }
+    }
+}
+
+// List
+
+.navbar__list{
+    .list{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 0px 48px;
+        list-style: none;
+        & li:last-child{
+            margin-bottom: 9px;
+        }
+        & li:nth-child(2){
+            margin-bottom: 9px;
+        }
+        & li:nth-child(3){
+            margin-bottom: 9px;
+        }
+        & li:first-child{
+            background-color: var(--WhiteBlue);
+            width: 93px;
+            height: 108px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 0px 0px 5px 5px;
+        }
+        .link-white{
+           text-decoration: none;
+           text-transform: none;
+           color: #FFF;
+           font-family: var(--Catamaran);
+           font-size: 25px;
+           font-weight: 500;
+           line-height: 133.6%; 
+           max-width: 65px;
+           margin-bottom: 10px;
+        }
+        .link-blue{
+            text-decoration: none;
+            text-transform: none;
+            color: #163561;
+            font-family: var(--Catamaran);
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 133.6%; 
+        }
+    }
+}
+
+// Btns
+
+.navbar__btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 72px;
+    margin-left: 300px;
+    .profile{
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        &:active{
+            background-color: #d2d2d2;
+            border-radius: 50%;
+        }
+    }
+    .Notifications{
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        &:active{
+            background-color: #d2d2d2;
+            border-radius: 35%;
+        }
+    }
+    .btn{
+        border: none;
+        border-radius: 20px;
+        color: #FFF;
+        font-family: var(--Catamaran);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 150.6%; 
+        letter-spacing: 0.6px;
+        padding: 23px 32px;
+        background-color: var(--WhiteBlue);
+        transition: 0.3s ease;
+        border: 2px solid var(--WhiteBlue);
+        cursor: pointer;
+        box-shadow: 0px 10px 10px 1px rgba(153, 186, 237, 0.50);
+        &:hover{
+            background-color: white;
+            color: var(--WhiteBlue);
+        }
+        &:active{
+            transform: scale(0.8);
+        }
+    }
+}

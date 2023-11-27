@@ -1,0 +1,85 @@
+:root {
+    --Catamaran: 'Catamaran', sans-serif;
+    --WhiteBlue: #99BAED;
+    --yellow: #FBB400;
+    --darkblue: #163561;
+}
+
+.gallary__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 272px;
+    flex-direction: column;
+    gap: 110px 0px;
+
+    .gallary__heading {
+        color: var(--darkblue);
+        font-family: var(--Catamaran);
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 116.6%;
+        letter-spacing: 2.1px;
+
+        span {
+            color: var(--yellow);
+            font-family: var(--Catamaran);
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 116.6%;
+            letter-spacing: 2.1px;
+        }
+    }
+
+    .gallary__imgs {
+        display: flex;
+        gap: 37px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1379px;
+
+    }
+
+    .gallary__btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            color: #FFF;
+            font-family: var(--Catamaran);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 150.6%;
+            letter-spacing: 0.6px;
+            border-radius: 20px;
+            background: var(--WhiteBlue);
+            padding: 23px 41px;
+            max-width: 200px;
+            height: 75px;
+            transition: 0.3s ease;
+            box-shadow: 0px 10px 10px 1px rgba(153, 186, 237, 0.50);
+            cursor: pointer;
+            margin-top: -33px;
+            &:hover{
+                background-color: white;
+                color: var(--WhiteBlue);
+                border: 2px solid var(--WhiteBlue);
+            }
+            &:active{
+                transform: scale(0.8);
+            }
+        }
+}
+
+.Vector5{
+    position: absolute;
+    margin-left: 1616px;
+    margin-top: 100px; 
+}
+
+.Vector6{
+    position: absolute;
+    margin-top: 108px;
+    margin-left: 10px;
+}
